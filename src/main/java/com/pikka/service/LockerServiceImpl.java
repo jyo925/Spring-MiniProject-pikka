@@ -55,4 +55,10 @@ public class LockerServiceImpl implements LockerService {
 		return locTicketDao.get(userId);
 	}
 
+	@Override
+	public int getCountLocker() {
+		
+		return locDao.useListCount();
+	}
+
 }

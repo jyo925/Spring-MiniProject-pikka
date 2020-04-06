@@ -20,7 +20,8 @@ public interface LockerService {
 	//이용권 등록하기
 	public void registerTicket(LockerTicket ticket);
 	
-	
+	//사물함 개수
+	public int getCountLocker();
 	
 	/*----------------- 아직 사용 안된 기능들---------------------- */
 	//이용권 있는지 없는지(이용권 가져오기랑 합칠수 있는지 생각해보기)

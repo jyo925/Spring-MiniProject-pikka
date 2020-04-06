@@ -12,5 +12,8 @@ public interface LockerDao {
 	public Locker get(String lockerNo);
 	//락커 정보 업데이트
 	public int update(Locker locker);
+	
+	//사용중인 락커 개수
+	public int useListCount();
 
 }

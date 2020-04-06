@@ -5,6 +5,9 @@
   
   <mapper namespace="com.pikka.dao.LockerDao">
   
+  <select id="useListCount" resultType="int">
+  select count(*) from locker where lockerStatus = 1;
+  </select>
   
   <select id="getList" resultType="com.pikka.domain.Locker">
   select * from locker

@@ -1,6 +1,5 @@
 package com.pikka.domain;
 
-import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

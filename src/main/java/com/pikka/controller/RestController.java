@@ -19,6 +19,7 @@ public class RestController {
 	@Autowired
 	private LockerService service;
 	
+	
 	//사물함 List return
 	@RequestMapping(value = "/getLocker", method = RequestMethod.POST,
 			produces = {MediaType.APPLICATION_PROBLEM_JSON_UTF8_VALUE,
@@ -28,10 +29,22 @@ public class RestController {
 	}
 	
 	
-	@RequestMapping(value="/checkTicket", method = RequestMethod.POST,produces = {MediaType.APPLICATION_PROBLEM_JSON_UTF8_VALUE,
+	
+	@RequestMapping(value="/checkTicket", method = RequestMethod.POST, produces = {MediaType.APPLICATION_PROBLEM_JSON_UTF8_VALUE,
 			MediaType.APPLICATION_ATOM_XML_VALUE})
 	public LockerTicket getTicket(Principal principal){
 		
 		return service.getTicket(principal.getName());
 	}
+	
+	
+	
+	//사물함 개수 
+	@RequestMapping(value = "/getCountLocker", method = RequestMethod.GET, produces = {MediaType.APPLICATION_PROBLEM_JSON_UTF8_VALUE,
+			MediaType.APPLICATION_ATOM_XML_VALUE})
+	public int getCountLocker() {
+		return service.getCountLocker();
+	}
+	
+	
 }
