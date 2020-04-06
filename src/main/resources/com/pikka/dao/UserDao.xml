@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.pikka.dao.UserDao">
+  
+  <resultMap type="com.pikka.domain.UserVO" id="userMap">
+   <id property="userId" column="userId"/>
+   <result property="userId" column="userId"/>
+   <result property="userPw" column="userPw"/>
+   <result property="userName" column="userName"/>
+   <result property="userTel" column="userTel"/>
+   <collection property="authList" resultMap="authMap">
+   </collection>
+  </resultMap>
+
+	<resultMap type="com.pikka.domain.AuthVO" id="authMap">
+	<result property="userId" column="userId"/>
+	<result property="auth" column="auth" />
+	</resultMap>
+  
+  <select id="getTime" resultType="String">
+  select sysdate() from dual
+  </select>
+  
+  <select id="getAllid" resultType="com.pikka.domain.UserVO">
+  select * from user
+  </select>
+  
+  <select id="read" resultMap="userMap">
+  select 
+  a.userId, a.userPw, a.userName, a.userTel, auth 
+  from user a left outer join user_auth b on a.userId = b.userId 
+  where a.userId = #{userId}
+  </select>
+  
+  <insert id="insertUser" >
+  insert 
+  into user ( userId, userPw, userName, userTel )
+  values ( #{userId}, #{userPw}, #{userName}, #{userTel})
+  </insert>
+  
+  <insert id="insertAuth">
+  insert
+  into user_auth ( userId, auth )
+  values ( #{userId}, #{auth})
+  </insert>
+  
+  <delete id="deleteUser">
+  delete
+  from user
+  where userId=#{userId}
+  </delete>
+  </mapper>
+  

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.pikka.dao.LockerDao">
+  
+  
+  <select id="getList" resultType="com.pikka.domain.Locker">
+  select * from locker
+  </select>
+  
+  <select id="get" resultType="com.pikka.domain.Locker">
+  select * from locker where lockerNo = #{lockerNo}
+  </select>
+  
+  <update id="update">
+  update locker set lockerStatus= #{lockerStatus} where lockerNo=#{lockerNo}
+  </update>
+  
+  <!-- #{lockerEndDate} 어떻게 받아오지? -->
+<!--   <update id="updateUse">
+  update locker set lockerStatus= #{lockerStatus}, lockerStartDate=#{lockerStartDate}, lockerEndDate=DATE_ADD(#{lockerEndDate}, INTERVAL #{lockerUseDate} DAY) where lockerNo=#{lockerNo}
+  </update> -->
+  
+  
+  </mapper>
+  

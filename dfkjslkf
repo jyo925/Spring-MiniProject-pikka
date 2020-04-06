@@ -1,0 +1,72 @@
+[33mcommit a51b8ea53bc73e8db01e3b6463b0c6f86c47315e[m[33m ([m[1;36mHEAD -> [m[1;32mjiyoon[m[33m, [m[1;31morigin/jiyoon[m[33m)[m
+Author: jiyoon <jyo925@naver.com>
+Date:   Thu Apr 2 16:08:02 2020 +0900
+
+    4/2 jiyoon
+
+[33mcommit c20b5bd0dfb58434076383aea20d952330d233c8[m
+Author: jiyoon <jyo925@naver.com>
+Date:   Wed Apr 1 18:51:20 2020 +0900
+
+    jiyoon 4/1
+
+[33mcommit facab65acf37a5c92f88602343908d8a113ff844[m
+Author: jiyoon <jyo925@naver.com>
+Date:   Tue Mar 31 18:06:24 2020 +0900
+
+    jiyoon 3/31
+
+[33mcommit 5961335be366a8ab3e00b3be556977c9137162b3[m
+Merge: 0132067 7f62d0c
+Author: jiyoon <jyo925@naver.com>
+Date:   Mon Mar 30 10:23:31 2020 +0900
+
+    Merge branch 'minjong' of https://github.com/bitcamp152team3/pikka into jiyoon
+
+[33mcommit 7f62d0cfa7f473eaeb049210b2f18610ffe58729[m[33m ([m[1;31morigin/minjong[m[33m)[m
+Author: MJK0211 <kimminjong0211@gmail.com>
+Date:   Fri Mar 27 11:59:14 2020 +0900
+
+    basic add
+
+[33mcommit 1534e09da78e49ab082f1e5d47002da14d4d22b4[m
+Author: MJK0211 <kimminjong0211@gmail.com>
+Date:   Fri Mar 27 11:54:44 2020 +0900
+
+    jsp css add
+
+[33mcommit 4b5726d39b129a2c4b3adae6a1b9cf022c71ee10[m
+Author: MJK0211 <kimminjong0211@gmail.com>
+Date:   Fri Mar 27 11:51:31 2020 +0900
+
+    ah commit
+
+[33mcommit 01320671bdf11cf61f949951021dc9c029399c51[m[33m ([m[1;32mmaster[m[33m)[m
+Author: jiyoon <jyo925@naver.com>
+Date:   Fri Mar 27 11:50:20 2020 +0900
+
+    jiyoon
+
+[33mcommit 69186ae9a296dda6a7b58f5088bf7f75c8a5d809[m
+Author: MJK0211 <kimminjong0211@gmail.com>
+Date:   Fri Mar 27 11:50:08 2020 +0900
+
+    resources 파일생
+
+[33mcommit 732dba15d8743a249fbb703ed20408a6d12398fb[m[33m ([m[1;31morigin/yeonsu[m[33m, [m[1;31morigin/sangku[m[33m, [m[1;31morigin/oleg[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mminjong[m[33m)[m
+Author: 39roc <funkidz39@gmail.com>
+Date:   Thu Mar 26 18:54:41 2020 +0900
+
+    spring config complete
+
+[33mcommit 6d346f1a14cae007b312ea04c5fd4d9da5f527e9[m
+Author: 39roc <funkidz39@gmail.com>
+Date:   Thu Mar 26 18:44:17 2020 +0900
+
+    Update README.md
+
+[33mcommit c1bc5a7e490a3bf00fa01b9722f47f61a7a1a85f[m
+Author: 39roc <funkidz39@gmail.com>
+Date:   Thu Mar 26 18:39:01 2020 +0900
+
+    Initial commit
